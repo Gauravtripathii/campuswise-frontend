@@ -1,0 +1,98 @@
+.forgot-password {
+    width: 100%;
+    height: 100vh; /* temp */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--blue);
+    text-align: center;
+  }
+  
+  .forgot-password svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form-fp {
+    border: 1px solid var(--blue-light);
+    padding: 30px;
+  }
+  
+  .form-fp .title {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  
+  .form-fp > .input {
+    margin-top: 40px;
+    width: 450px;
+    height: 50px;
+    border: 1px solid var(--blue);
+    display: flex;
+  }
+  
+  .form-fp > .input > .icon {
+    width: 10%;
+  }
+  
+  .form-fp > .input > .icon > svg {
+    width: 70%;
+    fill: var(--red);
+  }
+  
+  .form-fp > .input > input {
+    width: 90%;
+    height: 100%;
+    border: none;
+  }
+  .form-fp > .input > input:focus {
+    outline: none;
+  }
+  
+  .form-fp > .button {
+    margin-top: 40px;
+    width: 450px;
+    height: 50px;
+  }
+  
+  .form-fp > .button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    display: grid;
+    place-items: center;
+    transition: 0.5s ease;
+  }
+  
+  .form-fp > .button a:hover {
+    background-color: var(--white);
+    color: var(--red);
+  }
+  
+  @media only screen and (max-width: 580px) {
+        
+        .form-fp .title {
+          font-size: 30px;
+        }
+        
+        .form-fp > .input {
+          margin-top: 30px;
+          width: 300px;
+        }
+        
+        .form-fp > .button {
+          width: 300px;
+        }
+  
+        .form-fp > .input > input {
+          width: 85%;
+        }
+  
+        .form-fp > .input > .icon {
+          width: 15%;
+        }
+  }
